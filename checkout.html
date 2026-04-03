@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" href="./images/QPICK.png" type="image/png">
+</head>
+
+<body class="bg-brand-bg font-sans min-h-screen flex flex-col">
+    <div class="w-[90%] lg:w-[80%] xl:w-[70%] mx-auto flex flex-col min-h-screen">
+
+        <header class="min-h-[60px] flex items-center">
+            <a href="index.html">
+                <span class="text-[30px] font-[700] ml-[10px]">QPICK</span>
+            </a>
+            <img class="hidden md:ml-[75px] md:block" src="./Images/Phone-icon.png" alt="Phone">
+            <select class="hidden md:block md:ml-[20px] font-[500]">
+                <option>Apple</option>
+                <option>INOI</option>
+                <option>Nokia</option>
+                <option>Oppo</option>
+                <option>Xiaomi</option>
+                <option>Realme</option>
+                <option>Samsung</option>
+                <option>Sony</option>
+                <option>Vivo</option>
+            </select>
+            <div class="ml-auto flex gap-7">
+                <a href="wishlist.html" class="hidden md:block ">
+                    <img src="./Images/Heart-icon.png" alt="Wishlist" class="icon-animation">
+                </a>
+                <a href="cart.html" class="">
+                    <img src="./Images/Market-icon.png" alt="Cart" class="icon-animation">
+                </a>
+                <a href="burger" class=" md:hidden">
+                    <img src="./Images/burger-bar.png" alt="Cart" class="icon-animation">
+                </a>
+            </div>
+        </header>
+
+        <main class="flex flex-col">
+            <section class="mt-[20px]">
+
+                <div class="flex flex-col items-center">
+                    <div class="w-full md:w-[876px]">
+                        <h2 class="font-[600] text-text-heading text-[17px] md:text-[23px] mb-[16px]">Checkout</h2>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-[16px] md:gap-[16px]">
+
+                        <div class="w-full md:w-[430px] bg-brand-white flex flex-col shadow-2 rounded-[26px] gap-[16px] items-center">
+
+                            <div class="flex w-[80%] justify-between mt-[20px] font-[500] text-[13px] md:text-[17px]">
+                                <p>Courier delivery</p>
+                                <p>7 $</p>
+                            </div>
+
+                            <div class="w-[80%] overflow-hidden rounded-[9px]">
+                                <iframe
+                                    class="w-full h-[130px] md:h-[174px]"
+                                    src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                </iframe>
+                            </div>
+
+                            <div class="w-[80%] flex flex-col mb-[22px]">
+                                <div class="flex gap-[10px] mb-[14px] font-[500] text-[13px] md:text-[17px]">
+                                    <img src="./Images/map-point.png" alt="map-point">
+                                    <p>Shipping Address</p>
+                                </div>
+                                <div class="flex flex-col gap-[10px]">
+                                    <input
+                                      type="text"
+                                      placeholder="City"
+                                      class="w-full px-4 py-3 bg-brand-gray rounded-[15px] outline-none focus:ring-2 focus:ring-brand-black placeholder-gray-400 transition-all text-[13px] md:text-[16px] font-[500]"
+                                    >
+                                    <input
+                                      type="text"
+                                      placeholder="Street / District"
+                                      class="w-full px-4 py-3 bg-brand-gray rounded-[15px] outline-none focus:ring-2 focus:ring-brand-black placeholder-gray-400 transition-all text-[13px] md:text-[16px] font-[500]"
+                                    >
+                                    <div class="flex justify-between flex-wrap gap-y-[10px]">
+                                        <input
+                                          type="text"
+                                          placeholder="House"
+                                          class="w-[47%] px-4 py-3 bg-brand-gray rounded-[15px] outline-none focus:ring-2 focus:ring-brand-black placeholder-gray-400 transition-all text-[13px] md:text-[16px] font-[500]"
+                                        >
+                                        <input
+                                          type="text"
+                                          placeholder="Entrance"
+                                          class="w-[47%] px-4 py-3 bg-brand-gray rounded-[15px] outline-none focus:ring-2 focus:ring-brand-black placeholder-gray-400 transition-all text-[13px] md:text-[16px] font-[500]"
+                                        >
+                                        <input
+                                          type="text"
+                                          placeholder="Apartment"
+                                          class="w-[47%] px-4 py-3 bg-brand-gray rounded-[15px] outline-none focus:ring-2 focus:ring-brand-black placeholder-gray-400 transition-all text-[13px] md:text-[16px] font-[500]"
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flex-col gap-[14px]">
+                            <div class="w-full md:w-[430px] bg-brand-white flex flex-col shadow-2 rounded-[26px]">
+                                <p class="p-[17px] text-[17px] md:text-[23px] font-[600]">Your order</p>
+                                <div class="flex items-center gap-[10px] flex-col font-[500] mb-[17px] text-[13px] md:text-[17px]">
+                                    <div class="flex justify-between w-[80%]">
+                                        <p>Headphones Apple BYZ S852I</p>
+                                        <p>50 $</p>
+                                    </div>
+                                    <div class="flex justify-between w-[80%] border-b border-brand-gray pb-2">
+                                        <p>Shipping</p>
+                                        <p>7 $</p>
+                                    </div>
+                                    <div class="flex justify-between w-[80%]">
+                                        <p>Total</p>
+                                        <p>57 $</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full md:w-[430px] bg-brand-white flex flex-col shadow-2 rounded-[26px] items-center gap-[14px]">
+                                <label class="p-[17px] pb-0 text-[17px] md:text-[23px] font-[600] self-start">
+                                    Payment method
+                                </label>
+                                <select
+                                    id="payment-method"
+                                    name="payment-method"
+                                    class="w-[90%] px-4 py-3 bg-brand-gray rounded-[15px] outline-none appearance-none focus:ring-2 focus:ring-brand-black placeholder-gray-400 transition-all text-[13px] md:text-[16px] font-[500]">
+                                    <option value="card">Credit / Debit Card</option>
+                                    <option value="paypal">PayPal</option>
+                                    <option value="bank_transfer">Bank Transfer</option>
+                                    <option value="apple_google_pay">Apple Pay / Google Pay</option>
+                                    <option value="cash">Cash on Delivery</option>
+                                </select>
+                                <input
+                                    type="text"
+                                    placeholder="Have a promo code?"
+                                    class="w-[90%] px-4 py-3 bg-brand-gray rounded-[15px] outline-none focus:ring-2 focus:ring-brand-black placeholder-gray-400 transition-all text-[13px] md:text-[16px] font-[500] mb-[13px]">
+                            </div>
+
+                            <div class="w-full md:w-[430px] bg-brand-white flex flex-col shadow-2 rounded-[26px] items-center gap-[14px] p-[17px]">
+                                <label class="text-[17px] md:text-[23px] font-[600] self-start">
+                                    Recipient's phone number
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="+380 00 000 0000"
+                                    class="w-full px-4 py-3 bg-brand-gray rounded-[15px] outline-none focus:ring-2 focus:ring-brand-black placeholder-gray-400 transition-all text-[13px] md:text-[16px] font-[500]"
+                                >
+                            </div>
+
+                            <a href="confirmed.html" class="w-full h-[43px] md:h-[57px] bg-brand-black font-[600] text-brand-white flex items-center justify-center  rounded-[17px] cursor-pointer shadow-2 text-[13px] md:text-[14px]">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="hidden md:flex h-[150px] bg-brand-white mt-[90px] rounded-t-[30px] shadow-2 justify-between px-[29px]">
+            <a href="index.html" class="text-[25px] font-[700] mt-[29px]">
+                <span>QPICK</span>
+            </a>
+            <div class="flex gap-[10px] text-[17px] mt-[33px] w-[427px] h-[82px]">
+                <div class="flex flex-col justify-between h-full">
+                    <a href="wishlist.html" class="text-animation">Wishlist</a>
+                    <a href="cart.html" class="text-animation">Cart</a>
+                    <a href="contacts.html" class="text-animation">Contacts</a>
+                </div>
+                <div class="flex flex-col justify-between h-full ml-auto">
+                    <a href="terms.html" class="text-animation">Terms of Service</a>
+                    <div class="flex gap-[12px]">
+                        <img src="./Images/Lang.png" alt="language">
+                        <a href="#" class="text-animation">Eng</a>
+                        <a href="#" class="text-animation">Укр</a>
+                        <a href="#" class="text-animation">PL</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-[20px] mt-[29px]">
+                <a href="#">
+                    <img src="./Images/Instagram.png" alt="Instagram" class="h-[30px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Telegram.png" alt="Telegram" class="h-[30px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Whatsapp.png" alt="Whatsapp" class="h-[30px] icon-animation">
+                </a>
+            </div>
+        </footer>
+
+        <div class="w-full h-[65px] bg-brand-black font-[600] text-[17px] my-[35px] text-brand-white flex items-center justify-center rounded-[15px] md:hidden">
+            <a href="index.html" class="w-[100%] h-[100%] flex items-center justify-center">Home</a>
+        </div>
+    </div>
+
+
+    <div id="mobile-navbar-overlay" class="hidden fixed inset-0 bg-black/40 z-40 md:hidden"></div>
+
+
+    <div id="mobile-navbar" class="fixed top-0 right-0 h-full w-[75%] max-w-[320px] bg-brand-white z-50 flex flex-col px-[30px] py-[30px] translate-x-full transition-transform duration-300 ease-in-out md:hidden shadow-2">
+
+        <div class="flex justify-between items-center mb-[40px]">
+            <span class="text-[24px] font-[700]">QPICK</span>
+            <button id="navbar-close" class="text-[28px] font-[300] leading-none">&times;</button>
+        </div>
+
+        <nav class="flex flex-col gap-[24px] text-[17px] font-[500]">
+            <a href="index.html" class="text-animation">Home</a>
+            <a href="wishlist.html" class="text-animation">Wishlist</a>
+            <a href="cart.html" class="text-animation">Cart</a>
+            <a href="contacts.html" class="text-animation">Contacts</a>
+            <a href="terms.html" class="text-animation">Terms of Service</a>
+        </nav>
+
+        <div class="mt-auto flex justify-between items-center">
+            <div class="flex gap-[16px] text-[15px] font-[500]">
+                <a href="#" class="text-animation">Eng</a>
+                <a href="#" class="text-animation">Укр</a>
+                <a href="#" class="text-animation">PL</a>
+            </div>
+            <div class="flex gap-[16px]">
+                <a href="#">
+                    <img src="./Images/Instagram.png" alt="Instagram" class="h-[24px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Telegram.png" alt="Telegram" class="h-[24px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Whatsapp.png" alt="Whatsapp" class="h-[24px] icon-animation">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

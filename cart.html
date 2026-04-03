@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" href="./images/QPICK.png" type="image/png">
+</head>
+
+<body class="bg-brand-bg font-sans min-h-screen flex flex-col">
+    <div class="w-[90%] lg:w-[80%] xl:w-[70%] mx-auto flex flex-col min-h-screen">
+
+        <header class="min-h-[60px] flex items-center">
+            <a href="index.html">
+                <span class="text-[30px] font-[700] ml-[10px]">QPICK</span>
+            </a>
+            <img class="hidden md:ml-[75px] md:block" src="./Images/Phone-icon.png" alt="Phone">
+            <select class="hidden md:block md:ml-[20px] font-[500]">
+                <option>Apple</option>
+                <option>INOI</option>
+                <option>Nokia</option>
+                <option>Oppo</option>
+                <option>Xiaomi</option>
+                <option>Realme</option>
+                <option>Samsung</option>
+                <option>Sony</option>
+                <option>Vivo</option>
+            </select>
+            <div class="ml-auto flex gap-7">
+                <a href="wishlist.html" class="hidden md:block ">
+                    <img src="./Images/Heart-icon.png" alt="Wishlist" class="icon-animation">
+                </a>
+                <a href="cart.html" class="">
+                    <img src="./Images/Market-icon.png" alt="Cart" class="icon-animation">
+                </a>
+                <a href="burger" class=" md:hidden">
+                    <img src="./Images/burger-bar.png" alt="Cart" class="icon-animation">
+                </a>
+            </div>
+        </header>
+
+        <main class="flex flex-col flex-1">
+            <section class="mt-[17px]">
+
+                <div class="flex flex-col gap-[14px] w-full">
+                    <h2 class="font-[600] text-text-heading text-[17px] md:text-[23px]">Your cart</h2>
+
+                    <div class="flex flex-col lg:flex-row gap-[14px]">
+
+                        <div class="flex flex-col gap-[14px] w-full lg:w-[60%]">
+
+                            <div class="bg-card-bg rounded-[26px] flex relative shadow-2">
+                                <div class="flex flex-col items-center p-[18px] md:p-[22px]">
+                                    <img class="w-[120px] h-[120px] md:w-[174px] md:h-[174px] mb-4 object-contain" src="./Images/wired-1.png" alt="">
+                                    <div class="flex items-center gap-[39px]">
+                                        <button class="cursor-pointer hover:opacity-80 transition-opacity">
+                                            <img src="./Images/-.png" alt="-">
+                                        </button>
+                                        <span class="text-lg font-bold">1</span>
+                                        <button class="cursor-pointer hover:opacity-80 transition-opacity">
+                                            <img src="./Images/+.png" alt="+">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center ml-[17px]">
+                                    <p class="font-[600] text-[15px] md:text-[20px] text-text-heading">Apple BYZ S852I</p>
+                                    <p class="font-[600] text-[13px] md:text-[17px] text-text-muted">50 $</p>
+                                </div>
+                                <button class="absolute right-0 m-[22px] cursor-pointer icon-animation">
+                                    <img class="h-[20px] w-[20px]" src="./Images/trash.png" alt="trash">
+                                </button>
+                                <p class="font-[600] text-[13px] md:text-[17px] text-text-heading absolute bottom-0 right-0 m-[22px]">50 $</p>
+                            </div>
+
+                            <div class="bg-card-bg rounded-[26px] flex flex-col p-[17px] shadow-2">
+                                <h2 class="font-semibold text-text-heading text-[17px] md:text-[23px] mb-[17px]">Delivery</h2>
+                                <div class="w-full flex flex-col">
+                                    <div class="w-full h-[174px] overflow-hidden rounded-[9px]">
+                                        <iframe
+                                            class="w-full h-full"
+                                            src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=uk&amp;q=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%D0%B0%20%D0%9C%D0%B8%D1%80%D0%BE%D0%BD%D0%B0%20%D0%A2%D0%B0%D1%80%D0%BD%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%202,%20%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C,%20%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0%2046004&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                        </iframe>
+                                    </div>
+                                    <div class="flex items-center justify-between mt-[17px]">
+                                        <div class="flex items-center">
+                                            <img class="w-[17px] h-[11px]" src="./Images/truck.png" alt="truck">
+                                            <select class="ml-[9px] font-[500] text-center">
+                                                <option value="courier">Courier delivery</option>
+                                                <option value="pickup">Store pickup</option>
+                                                <option value="post">Post / Shipping service</option>
+                                                <option value="locker">Parcel locker</option>
+                                                <option value="express">Express delivery</option>
+                                            </select>
+                                        </div>
+                                        <p class="font-semibold text-[13px] md:text-[17px] text-text-heading">7 $</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bg-brand-white w-full lg:w-[348px] lg:h-[104px] rounded-[26px] flex flex-col shadow-2 ml-auto">
+                            <div class="flex p-[17px]">
+                                <p class="font-semibold text-[13px] md:text-[17px] text-text-heading">Total cost</p>
+                                <p class="font-semibold text-[13px] md:text-[17px] text-text-heading ml-auto">57 $</p>
+                            </div>
+                            <a href="checkout.html" class="w-full h-[43px] md:h-[57px] bg-brand-black font-[600] text-brand-white flex items-center justify-center gap-[9px] rounded-[17px] cursor-pointer shadow-2 text-[13px] md:text-[14px]">Proceed to Checkout</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="hidden md:flex h-[150px] bg-brand-white mt-[90px] rounded-t-[30px] shadow-2 justify-between px-[29px]">
+            <a href="index.html" class="text-[25px] font-[700] mt-[29px]">
+                <span>QPICK</span>
+            </a>
+            <div class="flex gap-[10px] text-[17px] mt-[33px] w-[427px] h-[82px]">
+                <div class="flex flex-col justify-between h-full">
+                    <a href="wishlist.html" class="text-animation">Wishlist</a>
+                    <a href="cart.html" class="text-animation">Cart</a>
+                    <a href="contacts.html" class="text-animation">Contacts</a>
+                </div>
+                <div class="flex flex-col justify-between h-full ml-auto">
+                    <a href="terms.html" class="text-animation">Terms of Service</a>
+                    <div class="flex gap-[12px]">
+                        <img src="./Images/Lang.png" alt="language">
+                        <a href="#" class="text-animation">Eng</a>
+                        <a href="#" class="text-animation">Укр</a>
+                        <a href="#" class="text-animation">PL</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-[20px] mt-[29px]">
+                <a href="#">
+                    <img src="./Images/Instagram.png" alt="Instagram" class="h-[30px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Telegram.png" alt="Telegram" class="h-[30px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Whatsapp.png" alt="Whatsapp" class="h-[30px] icon-animation">
+                </a>
+            </div>
+        </footer>
+
+        <div class="w-full h-[65px] bg-brand-black font-[600] text-[17px] my-[35px] text-brand-white flex items-center justify-center rounded-[15px] md:hidden">
+            <a href="index.html" class="w-[100%] h-[100%] flex items-center justify-center">Home</a>
+        </div>
+    </div>
+
+
+    <div id="mobile-navbar-overlay" class="hidden fixed inset-0 bg-black/40 z-40 md:hidden"></div>
+
+
+    <div id="mobile-navbar" class="fixed top-0 right-0 h-full w-[75%] max-w-[320px] bg-brand-white z-50 flex flex-col px-[30px] py-[30px] translate-x-full transition-transform duration-300 ease-in-out md:hidden shadow-2">
+
+        <div class="flex justify-between items-center mb-[40px]">
+            <span class="text-[24px] font-[700]">QPICK</span>
+            <button id="navbar-close" class="text-[28px] font-[300] leading-none">&times;</button>
+        </div>
+
+        <nav class="flex flex-col gap-[24px] text-[17px] font-[500]">
+            <a href="index.html" class="text-animation">Home</a>
+            <a href="wishlist.html" class="text-animation">Wishlist</a>
+            <a href="cart.html" class="text-animation">Cart</a>
+            <a href="contacts.html" class="text-animation">Contacts</a>
+            <a href="terms.html" class="text-animation">Terms of Service</a>
+        </nav>
+
+        <div class="mt-auto flex justify-between items-center">
+            <div class="flex gap-[16px] text-[15px] font-[500]">
+                <a href="#" class="text-animation">Eng</a>
+                <a href="#" class="text-animation">Укр</a>
+                <a href="#" class="text-animation">PL</a>
+            </div>
+            <div class="flex gap-[16px]">
+                <a href="#">
+                    <img src="./Images/Instagram.png" alt="Instagram" class="h-[24px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Telegram.png" alt="Telegram" class="h-[24px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Whatsapp.png" alt="Whatsapp" class="h-[24px] icon-animation">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" href="./images/QPICK.png" type="image/png">
+</head>
+
+<body class="bg-brand-bg font-sans min-h-screen flex flex-col">
+    <div class="w-[90%] lg:w-[80%] xl:w-[70%] mx-auto flex flex-col min-h-screen">
+
+        <header class="min-h-[60px] flex items-center">
+            <a href="index.html">
+                <span class="text-[30px] font-[700] ml-[10px]">QPICK</span>
+            </a>
+            <img class="hidden md:ml-[75px] md:block" src="./Images/Phone-icon.png" alt="Phone">
+            <select class="hidden md:block md:ml-[20px] font-[500]">
+                <option>Apple</option>
+                <option>INOI</option>
+                <option>Nokia</option>
+                <option>Oppo</option>
+                <option>Xiaomi</option>
+                <option>Realme</option>
+                <option>Samsung</option>
+                <option>Sony</option>
+                <option>Vivo</option>
+            </select>
+            <div class="ml-auto flex gap-7">
+                <a href="wishlist.html" class="hidden md:block ">
+                    <img src="./Images/Heart-icon.png" alt="Wishlist" class="icon-animation">
+                </a>
+                <a href="cart.html" class="">
+                    <img src="./Images/Market-icon.png" alt="Cart" class="icon-animation">
+                </a>
+                <a href="burger" class=" md:hidden">
+                    <img src="./Images/burger-bar.png" alt="Cart" class="icon-animation">
+                </a>
+            </div>
+        </header>
+
+        <main class="flex flex-col flex-1 items-center justify-center">
+            <section class="flex flex-col items-center gap-[20px] w-full py-[60px]">
+
+                <div class="w-[90%] md:w-[560px] bg-brand-white rounded-[30px] shadow-2 flex flex-col gap-[6px] px-[40px] py-[40px]">
+                    <img src="./Images/checked.png" alt="checked" class="w-[44px] h-[44px] mb-[8px]">
+                    <p class="text-text-muted text-[13px] md:text-[15px] font-[500] uppercase">Order placed</p>
+                    <p class="text-text-heading text-[22px] md:text-[28px] font-[700]">#123123</p>
+                    <div class="w-full h-[2px] bg-brand-gray rounded-full my-[10px]"></div>
+                    <p class="text-text-heading text-[14px] md:text-[17px] font-[500]">
+                        Thank you for your order! Our manager will contact you shortly to confirm the details.
+                    </p>
+                </div>
+
+                <div class="w-[90%] md:w-[560px] bg-brand-white rounded-[26px] shadow-2 flex justify-between items-center px-[28px] py-[20px]">
+                    <div class="flex flex-col gap-[4px]">
+                        <p class="text-text-muted text-[12px] font-[500]">Item</p>
+                        <p class="text-text-heading text-[14px] md:text-[16px] font-[600]">Headphones Apple BYZ S852I</p>
+                    </div>
+                    <div class="flex flex-col gap-[4px] items-end">
+                        <p class="text-text-muted text-[12px] font-[500]">Total</p>
+                        <p class="text-text-heading text-[14px] md:text-[16px] font-[600]">57 $</p>
+                    </div>
+                </div>
+
+                <a href="index.html" class="w-[90%] md:w-[560px] h-[50px] md:h-[57px] bg-brand-black text-brand-white font-[600] text-[14px] flex items-center justify-center rounded-[17px] shadow-2">
+                    Back to Home
+                </a>
+
+            </section>
+        </main>
+
+        <footer class="hidden md:flex h-[150px] bg-brand-white mt-auto rounded-t-[30px] shadow-2 justify-between px-[29px]">
+            <a href="index.html" class="text-[25px] font-[700] mt-[29px]">
+                <span>QPICK</span>
+            </a>
+            <div class="flex gap-[10px] text-[17px] mt-[33px] w-[427px] h-[82px]">
+                <div class="flex flex-col justify-between h-full">
+                    <a href="wishlist.html" class="text-animation">Wishlist</a>
+                    <a href="cart.html" class="text-animation">Cart</a>
+                    <a href="contacts.html" class="text-animation">Contacts</a>
+                </div>
+                <div class="flex flex-col justify-between h-full ml-auto">
+                    <a href="terms.html" class="text-animation">Terms of Service</a>
+                    <div class="flex gap-[12px]">
+                        <img src="./Images/Lang.png" alt="language">
+                        <a href="#" class="text-animation">Eng</a>
+                        <a href="#" class="text-animation">Укр</a>
+                        <a href="#" class="text-animation">PL</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-[20px] mt-[29px]">
+                <a href="#">
+                    <img src="./Images/Instagram.png" alt="Instagram" class="h-[30px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Telegram.png" alt="Telegram" class="h-[30px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Whatsapp.png" alt="Whatsapp" class="h-[30px] icon-animation">
+                </a>
+            </div>
+        </footer>
+
+        <div class="w-full h-[65px] bg-brand-black font-[600] text-[17px] my-[35px] text-brand-white flex items-center justify-center rounded-[15px] md:hidden">
+            <a href="index.html" class="w-[100%] h-[100%] flex items-center justify-center">Home</a>
+        </div>
+    </div>
+
+
+    <div id="mobile-navbar-overlay" class="hidden fixed inset-0 bg-black/40 z-40 md:hidden"></div>
+
+
+    <div id="mobile-navbar" class="fixed top-0 right-0 h-full w-[75%] max-w-[320px] bg-brand-white z-50 flex flex-col px-[30px] py-[30px] translate-x-full transition-transform duration-300 ease-in-out md:hidden shadow-2">
+
+        <div class="flex justify-between items-center mb-[40px]">
+            <span class="text-[24px] font-[700]">QPICK</span>
+            <button id="navbar-close" class="text-[28px] font-[300] leading-none">&times;</button>
+        </div>
+
+        <nav class="flex flex-col gap-[24px] text-[17px] font-[500]">
+            <a href="index.html" class="text-animation">Home</a>
+            <a href="wishlist.html" class="text-animation">Wishlist</a>
+            <a href="cart.html" class="text-animation">Cart</a>
+            <a href="contacts.html" class="text-animation">Contacts</a>
+            <a href="terms.html" class="text-animation">Terms of Service</a>
+        </nav>
+
+        <div class="mt-auto flex justify-between items-center">
+            <div class="flex gap-[16px] text-[15px] font-[500]">
+                <a href="#" class="text-animation">Eng</a>
+                <a href="#" class="text-animation">Укр</a>
+                <a href="#" class="text-animation">PL</a>
+            </div>
+            <div class="flex gap-[16px]">
+                <a href="#">
+                    <img src="./Images/Instagram.png" alt="Instagram" class="h-[24px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Telegram.png" alt="Telegram" class="h-[24px] icon-animation">
+                </a>
+                <a href="#">
+                    <img src="./Images/Whatsapp.png" alt="Whatsapp" class="h-[24px] icon-animation">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

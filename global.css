@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  
+  --breakpoint-sm: 480px; 
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  --color-brand-black:  #101010;
+  --color-brand-white:  #FFFFFF;
+  --color-brand-bg:     #EAEAEA;
+  --color-brand-gray:   #D6D6D6;
+
+  --color-accent-primary:   #FFA542;
+  --color-accent-secondary: #FFCE7F;
+  --color-accent-red: #DF6464;
+
+  --color-text-heading: #1C1C27;
+  --color-text-muted:   #838383;
+
+  --color-card-bg:  #FFFFFF;
+  --color-muted-bg:  #F9F9F9;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-color: #000000;
+}
+
+.text-animation {
+    @apply hover:text-accent-primary;
+    transition: 0.2s ease;
+}
+
+.icon-animation {
+  transition: transform 0.3s ease;  
+}
+
+.icon-animation:hover {
+  transform: scale(1.15);
+}
+
+.card-animation {
+  transition: 0.3s ease;
+}
+
+.card-animation:hover {
+  transform: scale(1.04);
+}
+
+.shadow-2{
+  box-shadow: 0px 0px 20px 0px #0000001A;
+}
