@@ -13,7 +13,8 @@ A fully functional multi-page tech store website with modern UI and complete sho
 ## 🚀 Demo
 
 [View Live Demo](https://tyholaz.github.io/tech-store-QPICK/)
-
+<img width="2422" height="1272" alt="Знімок екрана 2026-07-02 213425" src="https://github.com/user-attachments/assets/744ad4aa-149f-4c55-b41e-21a7db9b4bc1" />
+<img width="485" height="1067" alt="Знімок екрана 2026-07-02 213440" src="https://github.com/user-attachments/assets/126662e9-e333-46f1-9b3c-bac3fec59e47" />
 ## 🛠️ Technologies
 
 - HTML5
